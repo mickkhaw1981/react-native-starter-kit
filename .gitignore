@@ -32,7 +32,9 @@ yarn-error.*
 *.pem
 
 # env files
-.env*
+.env
+.env.*
+!.env.example
 
 # typescript
 *.tsbuildinfo
@@ -53,3 +55,8 @@ app-example
 *.log
 *.log.*
 .DS_Store
+
+# Environment variables
+.env
+.env.*
+!.env.example

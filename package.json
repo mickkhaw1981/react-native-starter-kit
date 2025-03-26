@@ -1,5 +1,5 @@
 {
-  "name": "appName",
+  "name": "react-native-starter-kit",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
