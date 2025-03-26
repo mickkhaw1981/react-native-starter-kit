@@ -8,6 +8,8 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
+ios/
+android/
 
 # Native
 *.orig.*
@@ -29,8 +31,8 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# env files
+.env*
 
 # typescript
 *.tsbuildinfo
@@ -40,3 +42,14 @@ app-example
 # Cursor
 .cursorrules
 .cursor-tasks
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.log
+*.log.*
+.DS_Store
