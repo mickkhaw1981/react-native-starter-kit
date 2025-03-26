@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# React Native Starter Kit 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern React Native starter kit built with [Expo](https://expo.dev), featuring a robust tech stack and best practices for mobile development.
 
-## Get started
+## Tech Stack
 
-1. Install dependencies
+- React Native with Expo
+- TypeScript
+- NativeWind & Tailwind CSS
+- Prisma (ORM)
+- Supabase (Database)
+- Lucide React Native (Icons)
+
+## Project Structure
+
+The project follows a file-based routing structure using Expo Router:
+
+```
+app/                  # Main application code
+├── components/       # Reusable components
+│   └── icons/       # Custom icons
+├── lib/             # Shared utilities
+│   └── utils/
+│       ├── shared.ts   # Shared utilities
+│       └── server.ts   # Server utilities
+└── ...              # Other app directories
+```
+
+## Getting Started
+
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Set up environment variables:
 
+   - Copy `.env.example` to `.env.local`
+   - Update the variables as needed
+   - Note: Use `EXPO_PUBLIC_` prefix for frontend-accessible variables
+
+3. Start the development server:
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Development Guidelines
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **TypeScript**: Use strict mode and avoid `any` types
+- **Components**:
+  - Default to Server Components where possible
+  - Write clean, concise components
+  - Follow mobile-first responsive design principles
+- **Styling**:
+  - Use NativeWind/Tailwind CSS for styling
+  - Follow mobile-first approach
+  - Support dark mode with `dark:` classes
+- **Icons**: Use `lucide-react-native` for icons; custom icons in `components/icons`
+- **Database**:
+  - Use Prisma as source of truth
+  - Run migrations with `npx prisma migrate dev`
+  - Never use `npx prisma db push`
+  - Use camelCase for fields, snake_case for tables
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Best Practices
 
-## Get a fresh project
+- Write comprehensive tests for new functionality
+- Keep code concise and commits semantic
+- Place reusable logic in appropriate utility files
+- Implement efficient data fetching and caching
+- Handle errors and loading states appropriately
+- Follow routing conventions
+- Use absolute imports (@/ for src, ~/ for outside)
 
-When you're ready, run:
+## Documentation
 
-```bash
-npm run reset-project
-```
+- Consult `prd.md` at project root for goals and features
+- Additional documentation available in `docs` directory
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Learn More
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo Documentation](https://docs.expo.dev/)
+- [NativeWind Documentation](https://www.nativewind.dev/)
+- [Prisma Documentation](https://www.prisma.io/docs)
+- [Supabase Documentation](https://supabase.io/docs)

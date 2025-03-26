@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## Documentation Usage
+- Always consult the project's ***prd.md ** file located at the project root for clear understanding of goals and features..
+- Review all additional documentation files within the ** docs ** directory provided with the project.
+If additional or updated documentation is required, use MCP servers (Brave Search, Puppeteer, Fetch) to locate official and current sources online.
+
+## This Project's Tech Stack:
+- React Native Expo
+- React
+- TypeScript
+- NativeWind
+- Tailwind CSS
+- Prisma for database ORM
+- Supabase for database
+
+## Icons
+- Prefer `lucide-react-native`; name icons in PascalCase.
+- Custom icons in `components/icons`.
+
+## User Interface (UI) and Styling
+- **Never change or affect the UI unintentionally. Only alter UI components if explicitly instructed or clearly part of the assigned task.
+- Use Tailwind CSS (mobile-first, dark mode with dark:(class)). Extend brand tokens in `tailwind.config.ts`.
+
+
+## Technical Stack Compliance
+- **Adhere strictly to the project's established technology stack.**
+- Do not introduce new technologies or packages unless explicitly instructed and justified.
+- You may suggest alternative technologies if beneficial, but never implement them without user approval.

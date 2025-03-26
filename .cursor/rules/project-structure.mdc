@@ -1,0 +1,15 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## React Native Expo Structure
+- Use Expo Router
+- Project structure can be found in [project-structure.md](mdc:docs/project-structure.md)
+
+## Env Rules
+- If you update environment variables, update the `.env.example` file
+- All environment variables should go in `.env.local`
+- Do not expose environment variables to the frontend
+- Use `EXPO_PUBLIC_` prefix for environment variables that need to be accessed from the frontend
+- You may import environment variables by using `process.env.VARIABLE_NAME`
