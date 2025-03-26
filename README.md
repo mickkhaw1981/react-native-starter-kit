@@ -164,16 +164,6 @@ Status:
   - Never use `npx prisma db push`
   - Use camelCase for fields, snake_case for tables
 
-## Best Practices
-
-- Write comprehensive tests for new functionality
-- Keep code concise and commits semantic
-- Place reusable logic in appropriate utility files
-- Implement efficient data fetching and caching
-- Handle errors and loading states appropriately
-- Follow routing conventions
-- Use absolute imports (@/ for src, ~/ for outside)
-
 ## Documentation
 
 - Consult `prd.md` at project root for goals and features
