@@ -31,10 +31,15 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# env files
+# Environment variables
 .env
-.env.*
+.env.local
+.env.development
+.env.staging
+.env.production
+.env*.local
 !.env.example
+!.env.sample
 
 # typescript
 *.tsbuildinfo
