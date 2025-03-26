@@ -16,3 +16,11 @@ datasource db {
 }
 
 // Your data model
+// Add your models here
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
